@@ -1,0 +1,105 @@
+.sidebar {
+  min-height: calc(100vh - 70px);
+  background: #fff;
+  padding: 0;
+  width: 230px;
+  z-index: 11;
+
+  display: block;
+
+  .nav {
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    display: flex;
+    padding-left: 0;
+    margin-top: 15px;
+    list-style: none;
+    font-size: 0.875rem;
+
+    li {
+      padding: 0 1.25rem;
+      transition-duration: 0.25s;
+      transition-property: background;
+      -webkit-transition-property: background;
+      background-color: #f3f3f3;
+      margin: 0 12px 12px;
+      border-radius: 5px;
+      > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0.8rem 0;
+        color: #3e4b5b;
+        -webkit-transition-duration: 0.45s;
+        transition-duration: 0.45s;
+        transition-property: color;
+        -webkit-transition-property: color;
+        cursor: pointer;
+        gap: 10px;
+        svg {
+          font-size: 12px;
+          &.rotate_arrow {
+            transform: rotate(-180deg);
+            animation-name: spin;
+            //animation-duration: 0.3s;
+            transition: all 0.7s;
+          }
+          &.rotate_r {
+            animation-name: spinr;
+            //animation-duration: 0.3s;
+            transition: all 0.7s;
+          }
+        }
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          to {
+            transform: rotate(-180deg);
+          }
+        }
+        @keyframes spinr {
+          0% {
+            transform: rotate(-180deg);
+          }
+
+          to {
+            transform: rotate(0deg);
+          }
+        }
+      }
+      ul {
+        margin-bottom: 20px;
+        margin-top: 0;
+        list-style: none;
+        padding: 0;
+        li {
+          padding: 0;
+          margin: 0;
+          a {
+            color: #888;
+            padding: 0.75rem 1rem;
+            position: relative;
+            font-size: 0.8125rem;
+            line-height: 1;
+            height: auto;
+            border-top: 0;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            gap: 10px;
+            svg {
+              font-size: 0.8125rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
