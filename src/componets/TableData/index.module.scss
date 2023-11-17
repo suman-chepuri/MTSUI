@@ -40,8 +40,10 @@
       margin-top: 20px;
       .table_dt {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
         .search_fi {
           display: flex;
           gap: 10px;
