@@ -20,6 +20,8 @@ import Tooltip from "react-bootstrap/Tooltip";
 import $ from "jquery";
 import "datatables.net";
 import "./table.scss";
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+
 function TableData() {
 
   return (
@@ -73,9 +75,18 @@ function TableData() {
                             </Tooltip>
                           }
                         >
-                          <Button className={csstyle.ex_excel}>
-                            <AiOutlineFileExcel />
-                          </Button>
+
+
+                          <ReactHTMLTableToExcel
+                            id="test-table-xls-button"
+                            className={csstyle.ex_excel}
+                            table="example"
+                            filename="tablexls"
+                            sheet="tablexls"
+                            buttonText={<AiOutlineFileExcel />}
+
+                          />
+
                         </OverlayTrigger>
                         <OverlayTrigger
                           placement="bottom"
@@ -99,7 +110,7 @@ function TableData() {
                       className={csstyle.table_data}
                       responsive
                     >
-                      
+
 
                       <thead>
                         <tr className="tbl_sort">
@@ -521,7 +532,7 @@ function TableData() {
                           <td>10-10-2023</td>
                         </tr>
                       </tbody>
-                    
+
                     </Table>
                   </div>
                 </div>
