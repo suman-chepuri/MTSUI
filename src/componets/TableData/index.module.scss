@@ -6,11 +6,13 @@
   display: flex;
   flex-direction: column;
   background: #f2edf3;
+
   .content_wrapper {
     background: #f2edf3;
     padding: 1.5rem 0.5rem;
     width: 100%;
     flex-grow: 1;
+
     .bead_crum {
       ul {
         padding: 0;
@@ -19,12 +21,14 @@
         gap: 10px;
         justify-content: flex-end;
         align-items: center;
+
         li {
           list-style-type: none;
           padding: 10px 0;
           color: #000;
           display: flex;
           align-items: center;
+
           a {
             display: block;
             text-decoration: none;
@@ -33,33 +37,40 @@
         }
       }
     }
+
     .content_panel {
       background-color: #fff;
       border-radius: 5px;
       padding: 20px;
       margin-top: 20px;
+
       .table_dt {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         margin-bottom: 20px;
         margin-top: 20px;
+
         .search_fi {
           display: flex;
           gap: 10px;
+
           .search_box {
             position: relative;
             float: left;
+
             input {
               height: 34px;
               border-radius: 20px;
               padding-left: 35px;
               border-color: #ddd;
               box-shadow: none;
+
               &:focus {
                 border-color: #3fbae4;
               }
             }
+
             svg {
               color: #a0a5b1;
               position: absolute;
@@ -68,6 +79,7 @@
               left: 10px;
             }
           }
+
           .search_dt {
             input {
               height: 34px;
@@ -75,10 +87,12 @@
 
               border-color: #ddd;
               box-shadow: none;
+
               &:focus {
                 border-color: #3fbae4;
               }
             }
+
             .go_btn {
               background-color: #999;
               padding: 0 5px;
@@ -87,17 +101,20 @@
             }
           }
         }
+
         .tools_dt {
           display: flex;
           gap: 10px;
           align-items: center;
           margin-top: -18px;
+
           button {
             background-color: unset;
             color: #999;
             padding: 0;
             height: 40px;
             border: unset;
+
             &:first-child {
               margin-right: 15px;
               color: #fff;
@@ -111,6 +128,7 @@
               font-size: 28px;
               margin-top: -8px;
             }
+
             &.ex_pdf {
               color: #ff273a;
               font-size: 28px;
@@ -119,31 +137,42 @@
           }
         }
       }
+
       .table_data {
         font-size: 12px;
+        margin-top: 20px;
+        float: left;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+
         th {
           text-wrap: nowrap;
         }
       }
+
       .svg_ic {
         font-size: 24px;
         cursor: pointer;
       }
+
       .edit_ic {
         @extend .svg_ic;
         color: #32a852;
       }
+
       .edit_cl {
         @extend .svg_ic;
         color: #ff273a;
       }
+
       .pagination_dt {
         display: flex;
         justify-content: space-between;
+
         ul {
           list-style-type: none;
           display: flex;
           gap: 10px;
+
           li {
             a {
               display: block;
