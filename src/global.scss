@@ -104,3 +104,14 @@
     }
   }
 }
+
+.tab_select {
+  .nav-link {
+    color: #5db5af;
+
+    &.active {
+      background-color: #5db5af;
+      color: #fff;
+    }
+  }
+}

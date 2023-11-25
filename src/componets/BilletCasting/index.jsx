@@ -1,10 +1,194 @@
+import React, { useState } from "react";
 import LeftMenu from "../LeftMenu";
 import TopBar from "../TopBar";
-import { Container, Col, Row, Table, Form, Button } from "react-bootstrap";
+import { Container, Col, Row, Table, Form, Button, Modal } from "react-bootstrap";
 import { MdKeyboardArrowRight, MdFolderOpen } from "react-icons/md";
 import { GoHome } from "react-icons/go";
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 import csstyle from "./index.module.scss";
+
 function BilletCasting() {
+
+    const [modalShow, setModalShow] = React.useState(false);
+    function MyVerticallyCenteredModal(props) {
+        return (
+            <Modal
+                {...props}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                scrollable={true}
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                        Reference Documents
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+
+                    <Tabs
+                        defaultActiveKey="levelI"
+                        id="uncontrolled-tab-example"
+                        className="tab_select mb-3 "
+                        fill
+                    >
+                        <Tab eventKey="levelI" title="Level I" >
+                            <Table striped bordered hover>
+                                <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th><Form.Check aria-label="option 1" /></th>
+                                        <th>Doc Reference Number</th>
+                                        <th>Doc Title</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td><Form.Control type="text" /></td>
+                                        <td><Form.Control type="text" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><Form.Check aria-label="option 1" /></td>
+                                        <td>Thornton</td>
+                                        <td>@twitter</td>
+                                    </tr>
+
+                                </tbody>
+                            </Table>
+                        </Tab>
+                        <Tab eventKey="levelII" title="Level II" >
+                            Tab content for level II
+                        </Tab>
+                        <Tab eventKey="levelIII" title="Level III" >
+                            Tab content for level III
+                        </Tab>
+                        <Tab eventKey="levelIV" title="Level IV" >
+                            Tab content for level IV
+                        </Tab>
+                        <Tab eventKey="levelV" title="Level V" >
+                            Tab content for level V
+                        </Tab>
+                    </Tabs>
+
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={props.onHide} variant="danger">Close</Button>
+                </Modal.Footer>
+            </Modal>
+        );
+    }
     return (
         <>
             <TopBar />
@@ -92,8 +276,12 @@ function BilletCasting() {
                                                     <td>
                                                         <div className={csstyle.tbl_col}>
                                                             <span>Reference Documents</span>
-                                                            <MdFolderOpen />
+                                                            <MdFolderOpen onClick={() => setModalShow(true)} />
                                                         </div>
+                                                        <MyVerticallyCenteredModal
+                                                            show={modalShow}
+                                                            onHide={() => setModalShow(false)}
+                                                        />
                                                     </td>
                                                     <td colspan="3">
                                                         Reference Documents
