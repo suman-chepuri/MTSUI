@@ -1,5 +1,6 @@
 import AppRoutes from "./routes";
 import "./global.scss";
+import "./table.scss";
 function App() {
   return (
     <div>

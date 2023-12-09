@@ -1,87 +1,114 @@
 .main_panel {
-    -webkit-transition: width 0.25s ease, margin 0.25s ease;
-    transition: width 0.25s ease, margin 0.25s ease;
-    width: calc(100% - 230px);
-    min-height: calc(100vh - 70px);
-    display: flex;
-    flex-direction: column;
+  -webkit-transition: width 0.25s ease, margin 0.25s ease;
+  transition: width 0.25s ease, margin 0.25s ease;
+  width: calc(100% - 230px);
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  background: #f2edf3;
+
+  .content_wrapper {
     background: #f2edf3;
+    padding: 1.5rem;
+    width: 100%;
+    flex-grow: 1;
 
-    .content_wrapper {
-        background: #f2edf3;
-        padding: 1.5rem;
-        width: 100%;
-        flex-grow: 1;
-
-        .bead_crum {
-            ul {
-                padding: 0;
-                margin: 0;
-                display: flex;
-                gap: 10px;
-                justify-content: flex-end;
-                align-items: center;
-
-                li {
-                    list-style-type: none;
-                    padding: 10px 0;
-                    color: #000;
-                    display: flex;
-                    align-items: center;
-
-                    a {
-                        display: block;
-                        text-decoration: none;
-                        color: #000;
-                    }
-                }
-            }
-        }
-
-        .content_panel {
-            background-color: #fff;
-            border-radius: 5px;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .row_box {
-            .row_level {
-                display: flex;
-                font-size: 24px;
-                flex-direction: column;
-
-                .level_icon {
-                    color: #118a7c;
-                }
-
-                button {
-                    padding: 3px 8px;
-                    background-color: #ddd !important;
-                    border: none;
-                    color: #333;
-                    font-size: 18px;
-                }
-            }
-        }
-    }
-
-    .tbl_col {
+    .bead_crum {
+      ul {
+        padding: 0;
+        margin: 0;
         display: flex;
-        align-items: center;
         gap: 10px;
-
-        svg {
-            font-size: 20px;
-            color: #ff273a;
-            cursor: pointer;
-        }
-    }
-
-    .tbl_btn {
-        display: flex;
         justify-content: flex-end;
-        gap: 10px;
-        margin: 30px 0 0px;
+        align-items: center;
+
+        li {
+          list-style-type: none;
+          padding: 10px 0;
+          color: #000;
+          display: flex;
+          align-items: center;
+
+          a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+          }
+        }
+      }
     }
+
+    .content_panel {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .row_box {
+      .row_level {
+        display: flex;
+        font-size: 24px;
+        flex-direction: column;
+
+        .level_icon {
+          color: #118a7c;
+        }
+
+        button {
+          padding: 3px 8px;
+          background-color: #ddd !important;
+          border: none;
+          color: #333;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .tbl_col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      font-size: 20px;
+      color: #ff273a;
+      cursor: pointer;
+    }
+  }
+
+  .tbl_btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 30px 0 0px;
+  }
+
+  .tbl_points {
+    ul {
+      margin-top: 10px;
+
+      li {
+        list-style-type: disc;
+        margin-bottom: 5px;
+
+        span {
+          display: inline-block;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+.table_data {
+  font-size: 12px;
+  margin-top: 20px !important;
+  float: left;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+  th {
+    text-wrap: nowrap;
+  }
 }

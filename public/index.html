@@ -42,7 +42,9 @@
     -->
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
       // Setup - add a text input to each footer cell
@@ -63,6 +65,74 @@
           api
             .columns()
             .eq(0)
+            .each(function (colIdx) {
+              // Set the header cell to contain the input element
+              var cell = $('.filters th').eq(
+                $(api.column(colIdx).header()).index()
+              );
+              var title = $(cell).text();
+              $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+              // On every keypress in this input
+              $(
+                'input',
+                $('.filters th').eq($(api.column(colIdx).header()).index())
+              )
+                .off('keyup change')
+                .on('change', function (e) {
+                  // Get the search value
+                  $(this).attr('title', $(this).val());
+                  var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                  var cursorPosition = this.selectionStart;
+                  // Search the column for that value
+                  api
+                    .column(colIdx)
+                    .search(
+                      this.value != ''
+                        ? regexr.replace('{search}', '(((' + this.value + ')))')
+                        : '',
+                      this.value != '',
+                      this.value == ''
+                    )
+                    .draw();
+                })
+                .on('keyup', function (e) {
+                  e.stopPropagation();
+
+                  $(this).trigger('change');
+                  $(this)
+                    .focus()[0]
+                  // .setSelectionRange(cursorPosition, cursorPosition);
+                });
+            });
+        },
+      });
+      /**********************/
+      $('#dataTabler thead tr')
+        .clone(true)
+        .addClass('filters')
+        .appendTo('#dataTabler thead');
+
+      var table = $('#dataTabler').DataTable({
+
+        "columnDefs": [
+          {
+            "targets": [1], // Index of the column you want to disable sorting for (0-based index)
+            "orderable": false,
+          }
+        ],
+        orderCellsTop: true,
+        fixedHeader: true,
+        //scrollY: "300px",
+        initComplete: function () {
+          var api = this.api();
+
+          // For each column
+          api
+            .columns()
+            .eq(0)
+
             .each(function (colIdx) {
               // Set the header cell to contain the input element
               var cell = $('.filters th').eq(

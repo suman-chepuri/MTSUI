@@ -9,21 +9,14 @@ import Table from "react-bootstrap/Table";
 import {
   MdEdit,
   MdOutlineClose,
-  MdKeyboardDoubleArrowLeft,
-  MdKeyboardDoubleArrowRight,
-  MdSearch,
   MdKeyboardArrowRight,
 } from "react-icons/md";
 import { BiPlus } from "react-icons/bi";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import $ from "jquery";
-import "datatables.net";
-import "./table.scss";
-import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+import ReactHTMLTableToExcel from "react-html-table-to-excel";
 
 function TableData() {
-
   return (
     <>
       <TopBar />
@@ -75,8 +68,6 @@ function TableData() {
                             </Tooltip>
                           }
                         >
-
-
                           <ReactHTMLTableToExcel
                             id="test-table-xls-button"
                             className={csstyle.ex_excel}
@@ -84,9 +75,7 @@ function TableData() {
                             filename="tablexls"
                             sheet="tablexls"
                             buttonText={<AiOutlineFileExcel />}
-
                           />
-
                         </OverlayTrigger>
                         <OverlayTrigger
                           placement="bottom"
@@ -110,12 +99,12 @@ function TableData() {
                       className={csstyle.table_data}
                       responsive
                     >
-
-
                       <thead>
                         <tr className="tbl_sort">
                           <th>#</th>
-                          <th><span></span> </th>
+                          <th>
+                            <span></span>{" "}
+                          </th>
                           <th> </th>
                           <th>User Name</th>
                           <th>Login Id</th>
@@ -532,7 +521,6 @@ function TableData() {
                           <td>10-10-2023</td>
                         </tr>
                       </tbody>
-
                     </Table>
                   </div>
                 </div>

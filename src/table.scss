@@ -882,6 +882,40 @@ html.dark .dataTables_wrapper .dataTables_paginate .paginate_button:active {
   }
 }
 
+#dataTabler {
+  .tbl_sort {
+    th {
+
+      &:nth-child(2) {
+        &.sorting {
+
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .filters {
+    th {
+      &:nth-child(1) {
+        input {
+          width: 45px;
+        }
+      }
+
+
+      &:nth-child(2) {
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 .dataTables_wrapper {
   .dataTables_filter {
     float: left;
