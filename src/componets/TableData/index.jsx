@@ -90,13 +90,13 @@ function TableData() {
                       </div>
                     </div>
                     <Table
-                      id="example"
-                      class="stripe row-border order-column"
+                      id="tableData"
+
                       style={{ width: "100%" }}
                       striped
                       bordered
                       hover
-                      className={csstyle.table_data}
+                      className="tableIndex  stripe row-border order-column"
                       responsive
                     >
                       <thead>
@@ -105,7 +105,7 @@ function TableData() {
                           <th>
                             <span></span>{" "}
                           </th>
-                          <th> </th>
+                          <th><span></span>{" "} </th>
                           <th>User Name</th>
                           <th>Login Id</th>
                           <th>Role Function</th>
@@ -117,6 +117,10 @@ function TableData() {
                           <th>Created On</th>
                           <th>Modified By</th>
                           <th>Modified On</th>
+                          <th>Active</th>
+                          <th>Delete</th>
+                          <th>Inactive</th>
+                          <th>Pending</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -139,387 +143,14 @@ function TableData() {
                           <td>10-12-2023</td>
                           <td>10-12-2023</td>
                           <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>shivani</td>
-                          <td>shivani</td>
-                          <td>Sub Admin</td>
-                          <td>shivani@gmail.com</td>
-                          <td>1234567890</td>
-                          <td>Approve</td>
+                          <td><Button className="active_global">Active</Button></td>
+                          <td><Button className="delete_global">Delete</Button></td>
+                          <td><Button className="inactive_global">Inactive</Button></td>
+                          <td><Button className="pending_global">Pending</Button></td>
 
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
                         </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>suman</td>
-                          <td>suman12</td>
-                          <td>Admin</td>
-                          <td>sumanchsmn@gmail.com</td>
-                          <td>9573528727</td>
-                          <td>Approve</td>
 
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>shivani</td>
-                          <td>shivani</td>
-                          <td>Sub Admin</td>
-                          <td>shivani@gmail.com</td>
-                          <td>1234567890</td>
-                          <td>Approve</td>
 
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>suman</td>
-                          <td>suman12</td>
-                          <td>Admin</td>
-                          <td>sumanchsmn@gmail.com</td>
-                          <td>9573528727</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>shivani</td>
-                          <td>shivani</td>
-                          <td>Sub Admin</td>
-                          <td>shivani@gmail.com</td>
-                          <td>1234567890</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>suman</td>
-                          <td>suman12</td>
-                          <td>Admin</td>
-                          <td>sumanchsmn@gmail.com</td>
-                          <td>9573528727</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>shivani</td>
-                          <td>shivani</td>
-                          <td>Sub Admin</td>
-                          <td>shivani@gmail.com</td>
-                          <td>1234567890</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>suman</td>
-                          <td>suman12</td>
-                          <td>Admin</td>
-                          <td>sumanchsmn@gmail.com</td>
-                          <td>9573528727</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>shivani</td>
-                          <td>shivani</td>
-                          <td>Sub Admin</td>
-                          <td>shivani@gmail.com</td>
-                          <td>1234567890</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>suman</td>
-                          <td>suman12</td>
-                          <td>Admin</td>
-                          <td>sumanchsmn@gmail.com</td>
-                          <td>9573528727</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>shivani</td>
-                          <td>shivani</td>
-                          <td>Sub Admin</td>
-                          <td>shivani@gmail.com</td>
-                          <td>1234567890</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>suman</td>
-                          <td>suman12</td>
-                          <td>Admin</td>
-                          <td>sumanchsmn@gmail.com</td>
-                          <td>9573528727</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>shivani</td>
-                          <td>shivani</td>
-                          <td>Sub Admin</td>
-                          <td>shivani@gmail.com</td>
-                          <td>1234567890</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>suman</td>
-                          <td>suman12</td>
-                          <td>Admin</td>
-                          <td>sumanchsmn@gmail.com</td>
-                          <td>9573528727</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>shivani</td>
-                          <td>shivani</td>
-                          <td>Sub Admin</td>
-                          <td>shivani@gmail.com</td>
-                          <td>1234567890</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>suman</td>
-                          <td>suman12</td>
-                          <td>Admin</td>
-                          <td>sumanchsmn@gmail.com</td>
-                          <td>9573528727</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>shivani</td>
-                          <td>shivani</td>
-                          <td>Sub Admin</td>
-                          <td>shivani@gmail.com</td>
-                          <td>1234567890</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>suman</td>
-                          <td>suman12</td>
-                          <td>Admin</td>
-                          <td>sumanchsmn@gmail.com</td>
-                          <td>9573528727</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>
-                            <MdEdit className={csstyle.edit_ic} />
-                          </td>
-                          <td>
-                            <MdOutlineClose className={csstyle.edit_cl} />
-                          </td>
-                          <td>shivani</td>
-                          <td>shivani</td>
-                          <td>Sub Admin</td>
-                          <td>shivani@gmail.com</td>
-                          <td>1234567890</td>
-                          <td>Approve</td>
-
-                          <td>10-11-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-12-2023</td>
-                          <td>10-10-2023</td>
-                        </tr>
                       </tbody>
                     </Table>
                   </div>

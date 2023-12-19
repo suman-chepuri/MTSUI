@@ -115,3 +115,34 @@
     }
   }
 }
+
+.btn_global {
+  padding: 0.1rem 0.75rem;
+  border-radius: 20px;
+  font-size: 12px;
+  border: unset !important;
+}
+
+.active_global {
+  @extend .btn_global;
+
+  background-color: #198754 !important;
+}
+
+.delete_global {
+  @extend .btn_global;
+
+  background-color: #dc3545 !important;
+}
+
+.pending_global {
+  @extend .btn_global;
+  background-color: #ffc107 !important;
+  color: #000 !important;
+}
+
+.inactive_global {
+  @extend .btn_global;
+  background-color: #6c757d !important;
+  color: #fff;
+}

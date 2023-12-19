@@ -575,6 +575,7 @@ table.dataTable td {
 
 .dataTables_wrapper .dataTables_length {
   float: left;
+  margin-top: 3px;
 }
 
 .dataTables_wrapper .dataTables_length select {
@@ -920,6 +921,7 @@ html.dark .dataTables_wrapper .dataTables_paginate .paginate_button:active {
   .dataTables_filter {
     float: left;
     margin-left: 20px;
+
   }
 }
 
@@ -938,4 +940,34 @@ html.dark .dataTables_wrapper .dataTables_paginate .paginate_button:active {
     //margin-left: 20px;
     margin: 20px;
   }
+}
+
+.tableIndex {
+  font-size: 12px;
+  margin-top: 20px !important;
+  float: left;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+  .filters {
+    th {
+      &:nth-child(1) {
+        input {
+          width: 45px;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(14),
+      &:nth-child(15),
+      &:nth-child(16),
+      &:nth-child(17) {
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+
+
 }
