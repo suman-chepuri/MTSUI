@@ -968,6 +968,107 @@ html.dark .dataTables_wrapper .dataTables_paginate .paginate_button:active {
       }
     }
   }
+}
 
 
+#dataTablet {
+  .tbl_sort {
+    th {
+
+      &:nth-child(2) {
+        &.sorting {
+
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .filtert {
+    th {
+      &:nth-child(1) {
+        input {
+          width: 45px;
+        }
+      }
+
+
+      &:nth-child(2) {
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#dataTabledl {
+  .tbl_sort {
+    th {
+
+      &:nth-child(2) {
+        &.sorting {
+
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .filterdl {
+    th {
+      &:nth-child(1) {
+        input {
+          width: 45px;
+        }
+      }
+
+
+      &:nth-child(2) {
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#dataTableil {
+  .tbl_sort {
+    th {
+
+      &:nth-child(2) {
+        &.sorting {
+
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .filteril {
+    th {
+      &:nth-child(1) {
+        input {
+          width: 45px;
+        }
+      }
+
+
+      &:nth-child(2) {
+        input {
+          display: none;
+        }
+      }
+    }
+  }
 }

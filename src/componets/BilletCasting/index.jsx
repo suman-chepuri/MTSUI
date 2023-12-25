@@ -379,7 +379,259 @@ function BilletCasting() {
                             </div>
                           </td>
                           <td colspan="3">
-                            <Button variant="link">View Documents</Button>
+                            <div >
+                              <Button
+                                variant="link"
+
+                                data-toggle="modal" data-target=".is-example-modal-lg"
+                              >
+                                View Documents
+                              </Button>
+                              <div class="modal fade is-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabelr" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Modal title</h5>
+                                      <Button variant="light" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </Button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <Tabs
+                                        defaultActiveKey="levelI"
+                                        id="uncontrolled-tab-example"
+                                        className="tab_select mb-3 "
+                                        fill
+                                      >
+                                        <Tab eventKey="levelI" title="Level I">
+                                          <div className="table_scroll_pop">
+                                            <Table class="stripe row-border order-column"
+                                              style={{ width: "100%" }}
+                                              striped
+                                              bordered
+                                              hover
+                                              className={csstyle.table_data}
+                                              responsive
+                                              id="dataTablet" >
+                                              <thead>
+                                                <tr>
+                                                  <th>#</th>
+                                                  <th>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </th>
+                                                  <th>Doc Reference Number</th>
+                                                  <th>Doc Title</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+
+                                                <tr>
+                                                  <td>1</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Test</td>
+                                                  <td>@mdo</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>2</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                              </tbody>
+                                            </Table>
+                                          </div>
+                                        </Tab>
+                                        <Tab eventKey="levelII" title="Level II">
+                                          Tab content for level II
+                                        </Tab>
+                                        <Tab eventKey="levelIII" title="Level III">
+                                          Tab content for level III
+                                        </Tab>
+                                        <Tab eventKey="levelIV" title="Level IV">
+                                          Tab content for level IV
+                                        </Tab>
+                                        <Tab eventKey="levelV" title="Level V">
+                                          Tab content for level V
+                                        </Tab>
+                                      </Tabs>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className={csstyle.tbl_points}>
+                                <ul>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
                           </td>
                         </tr>
                         <tr>
@@ -389,7 +641,258 @@ function BilletCasting() {
                             </div>
                           </td>
                           <td colspan="3">
-                            <Button variant="link">View Documents</Button>
+                            <div >
+                              <Button
+                                variant="link"
+
+                                data-toggle="modal" data-target=".dl-example-modal-lg"
+                              >
+                                View Documents
+                              </Button>
+                              <div class="modal fade dl-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabelr" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Modal title</h5>
+                                      <Button variant="light" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </Button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <Tabs
+                                        defaultActiveKey="levelI"
+                                        id="uncontrolled-tab-example"
+                                        className="tab_select mb-3 "
+                                        fill
+                                      >
+                                        <Tab eventKey="levelI" title="Level I">
+                                          <div className="table_scroll_pop">
+                                            <Table class="stripe row-border order-column"
+                                              style={{ width: "100%" }}
+                                              striped
+                                              bordered
+                                              hover
+                                              className={csstyle.table_data}
+                                              responsive
+                                              id="dataTabledl" >
+                                              <thead>
+                                                <tr>
+                                                  <th>#</th>
+                                                  <th>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </th>
+                                                  <th>Doc Reference Number</th>
+                                                  <th>Doc Title</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+
+                                                <tr>
+                                                  <td>1</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Hyderabad</td>
+                                                  <td>@mdo</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>2</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                              </tbody>
+                                            </Table>
+                                          </div>
+                                        </Tab>
+                                        <Tab eventKey="levelII" title="Level II">
+                                          Tab content for level II
+                                        </Tab>
+                                        <Tab eventKey="levelIII" title="Level III">
+                                          Tab content for level III
+                                        </Tab>
+                                        <Tab eventKey="levelIV" title="Level IV">
+                                          Tab content for level IV
+                                        </Tab>
+                                        <Tab eventKey="levelV" title="Level V">
+                                          Tab content for level V
+                                        </Tab>
+                                      </Tabs>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className={csstyle.tbl_points}>
+                                <ul>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </td>
                         </tr>
                         <tr>
@@ -399,7 +902,258 @@ function BilletCasting() {
                             </div>
                           </td>
                           <td colspan="3">
-                            <Button variant="link">View Documents</Button>
+                            <div >
+                              <Button
+                                variant="link"
+
+                                data-toggle="modal" data-target=".il-example-modal-lg"
+                              >
+                                View Documents
+                              </Button>
+                              <div class="modal fade il-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabelr" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Modal title</h5>
+                                      <Button variant="light" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </Button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <Tabs
+                                        defaultActiveKey="levelI"
+                                        id="uncontrolled-tab-example"
+                                        className="tab_select mb-3 "
+                                        fill
+                                      >
+                                        <Tab eventKey="levelI" title="Level I">
+                                          <div className="table_scroll_pop">
+                                            <Table class="stripe row-border order-column"
+                                              style={{ width: "100%" }}
+                                              striped
+                                              bordered
+                                              hover
+                                              className={csstyle.table_data}
+                                              responsive
+                                              id="dataTableil" >
+                                              <thead>
+                                                <tr>
+                                                  <th>#</th>
+                                                  <th>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </th>
+                                                  <th>Doc Reference Number</th>
+                                                  <th>Doc Title</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+
+                                                <tr>
+                                                  <td>1</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>bangalore</td>
+                                                  <td>@mdo</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>2</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>
+                                                    <Form.Check aria-label="option 1" />
+                                                  </td>
+                                                  <td>Thornton</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                              </tbody>
+                                            </Table>
+                                          </div>
+                                        </Tab>
+                                        <Tab eventKey="levelII" title="Level II">
+                                          Tab content for level II
+                                        </Tab>
+                                        <Tab eventKey="levelIII" title="Level III">
+                                          Tab content for level III
+                                        </Tab>
+                                        <Tab eventKey="levelIV" title="Level IV">
+                                          Tab content for level IV
+                                        </Tab>
+                                        <Tab eventKey="levelV" title="Level V">
+                                          Tab content for level V
+                                        </Tab>
+                                      </Tabs>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className={csstyle.tbl_points}>
+                                <ul>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span>IMS/MR/P/01</span>
+                                    <span>
+                                      Procedure for control of documents
+                                    </span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </td>
                         </tr>
                         <tr>
