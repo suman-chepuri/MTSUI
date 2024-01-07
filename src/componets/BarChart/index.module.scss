@@ -1,0 +1,99 @@
+.main_panel {
+  -webkit-transition: width 0.25s ease, margin 0.25s ease;
+  transition: width 0.25s ease, margin 0.25s ease;
+  width: calc(100% - 230px);
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  background: #f2edf3;
+
+  .content_wrapper {
+    background: #f2edf3;
+    padding: 1.5rem;
+    width: 100%;
+    flex-grow: 1;
+
+    .bead_crum {
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+          list-style-type: none;
+          padding: 10px 0;
+          color: #000;
+          display: flex;
+          align-items: center;
+
+          a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+          }
+        }
+      }
+    }
+
+    .content_panel {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      margin-top: 20px;
+
+
+      .bar_title {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-weight: 500;
+        justify-content: space-between;
+
+        >div {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+
+        button {
+          color: #000;
+          font-size: 24px;
+          padding: 0;
+        }
+      }
+
+      .pie_chart {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .bar_footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+          text-decoration: none;
+          padding: 0;
+        }
+      }
+
+      .chat_height {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+      }
+
+
+    }
+
+
+  }
+}
+
+.chart_table {
+  margin-top: 30px;
+}
