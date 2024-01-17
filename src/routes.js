@@ -4,6 +4,7 @@ import AdminHome from "./componets/AdminHome";
 import TableData from "./componets/TableData";
 import BilletCasting from "./componets/BilletCasting";
 import Barchart from "./componets/BarChart";
+import ClauseDoc from "./componets/ClauseDoc";
 const AppRoutes = props => {
     return (
         <Routes>
@@ -12,6 +13,7 @@ const AppRoutes = props => {
             <Route exact path="/TableData" element={<TableData />}></Route>
             <Route exact path="/BilletCasting" element={<BilletCasting />}></Route>
             <Route exact path="/Barchart" element={<Barchart />}></Route>
+            <Route exact path="/ClauseDoc" element={<ClauseDoc />}></Route>
         </Routes>
     );
 };
