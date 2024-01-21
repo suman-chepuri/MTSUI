@@ -1146,3 +1146,42 @@ html.dark .dataTables_wrapper .dataTables_paginate .paginate_button:active {
     }
   }
 }
+
+#ArchivedDocuments {
+  font-size: 12px;
+  margin-top: 20px !important;
+  float: left;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+  // .tbl_sort {
+  //   th {
+
+  //     &:nth-child(2) {
+  //       &.sorting {
+
+  //         &:before,
+  //         &:after {
+  //           display: none;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  .archiveddocuments {
+    th {
+      &:nth-child(1) {
+        input {
+          width: 45px;
+        }
+      }
+
+      &:nth-child(2) {
+        input {
+          display: none;
+        }
+      }
+
+    }
+  }
+}
