@@ -1,17 +1,14 @@
 import React, { useEffect } from "react";
 import { Container, Col, Button, Row, Stack, Form } from "react-bootstrap";
 import csstyle from "./index.module.scss";
-import { AiOutlineFileExcel, AiOutlineFilePdf } from "react-icons/ai";
 import { GoHome } from "react-icons/go";
 import TopBar from "../TopBar";
 import LeftMenu from "../LeftMenu";
 import Table from "react-bootstrap/Table";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { BiPlus } from "react-icons/bi";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
-import ReactHTMLTableToExcel from "react-html-table-to-excel";
+
 import Accordion from 'react-bootstrap/Accordion';
+import { IoEyeSharp } from "react-icons/io5";
 
 function ConsolidatedReport() {
   return (
@@ -83,13 +80,71 @@ function ConsolidatedReport() {
                                 <td>suman</td>
                                 <td>suman12</td>
                                 <td>Admin</td>
-                                <td>sumanchsmn@gmail.com</td>
+                                <td>
+                                  <a href="#" data-toggle="modal" data-target=".is-example-modal-lg">4</a>
+                                </td>
                                 <td>9573528727</td>
                               </tr>
 
 
                             </tbody>
                           </Table>
+                          <div class="modal fade is-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabelr" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Views</h5>
+                                  <Button variant="light" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </Button>
+                                </div>
+                                <div class="modal-body">
+                                  <Table
+                                    id="MasterPop"
+
+                                    style={{ width: "100%" }}
+                                    striped
+                                    bordered
+                                    hover
+                                    className="  stripe row-border order-column"
+                                    responsive
+                                  >
+                                    <thead>
+                                      <tr className="tbl_sort">
+                                        <th>#</th>
+                                        <th>Document No</th>
+                                        <th>Title</th>
+                                        <th>Issue No</th>
+                                        <th>Rev No</th>
+                                        <th>Issue Effective Date</th>
+                                        <th>Obsolete Count</th>
+                                        <th>&nbsp;</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>suman</td>
+                                        <td>suman12</td>
+                                        <td>01</td>
+                                        <td>03</td>
+                                        <td>21/07/2023</td>
+                                        <td>3</td>
+                                        <td><a href="#" className={csstyle.eye_icon}><IoEyeSharp /></a> </td>
+                                      </tr>
+
+
+
+                                    </tbody>
+                                  </Table>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="1">
