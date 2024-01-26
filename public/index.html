@@ -680,6 +680,226 @@
 
 
       /**********************/
+
+      /**********************/
+      $('#MasterDocuments thead tr')
+        .clone(true)
+        .addClass('masterdoc')
+        .appendTo('#MasterDocuments thead');
+
+      var table = $('#MasterDocuments').DataTable({
+        // "columnDefs": [
+        //   {
+        //     "targets": [1],
+        //     "orderable": false,
+        //   }
+
+        // ],
+        orderCellsTop: true,
+        fixedHeader: true,
+        //scrollY: "300px",
+        initComplete: function () {
+          var api = this.api();
+
+          // For each column
+          api
+            .columns()
+            .eq(0)
+
+            .each(function (colIdx) {
+              // Set the header cell to contain the input element
+              var cell = $('.masterdoc th').eq(
+                $(api.column(colIdx).header()).index()
+              );
+              var title = $(cell).text();
+              $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+              // On every keypress in this input
+              $(
+                'input',
+                $('.masterdoc th').eq($(api.column(colIdx).header()).index())
+              )
+                .off('keyup change')
+                .on('change', function (e) {
+                  // Get the search value
+                  $(this).attr('title', $(this).val());
+                  var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                  var cursorPosition = this.selectionStart;
+                  // Search the column for that value
+                  api
+                    .column(colIdx)
+                    .search(
+                      this.value != ''
+                        ? regexr.replace('{search}', '(((' + this.value + ')))')
+                        : '',
+                      this.value != '',
+                      this.value == ''
+                    )
+                    .draw();
+                })
+                .on('keyup', function (e) {
+                  e.stopPropagation();
+
+                  $(this).trigger('change');
+                  $(this)
+                    .focus()[0]
+                  // .setSelectionRange(cursorPosition, cursorPosition);
+                });
+            });
+        },
+      });
+
+
+
+      /**********************/
+
+
+      /**********************/
+      $('#ObsoleteDocuments thead tr')
+        .clone(true)
+        .addClass('obsoletedoc')
+        .appendTo('#ObsoleteDocuments thead');
+
+      var table = $('#ObsoleteDocuments').DataTable({
+        // "columnDefs": [
+        //   {
+        //     "targets": [1],
+        //     "orderable": false,
+        //   }
+
+        // ],
+        orderCellsTop: true,
+        fixedHeader: true,
+        //scrollY: "300px",
+        initComplete: function () {
+          var api = this.api();
+
+          // For each column
+          api
+            .columns()
+            .eq(0)
+
+            .each(function (colIdx) {
+              // Set the header cell to contain the input element
+              var cell = $('.obsoletedoc th').eq(
+                $(api.column(colIdx).header()).index()
+              );
+              var title = $(cell).text();
+              $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+              // On every keypress in this input
+              $(
+                'input',
+                $('.obsoletedoc th').eq($(api.column(colIdx).header()).index())
+              )
+                .off('keyup change')
+                .on('change', function (e) {
+                  // Get the search value
+                  $(this).attr('title', $(this).val());
+                  var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                  var cursorPosition = this.selectionStart;
+                  // Search the column for that value
+                  api
+                    .column(colIdx)
+                    .search(
+                      this.value != ''
+                        ? regexr.replace('{search}', '(((' + this.value + ')))')
+                        : '',
+                      this.value != '',
+                      this.value == ''
+                    )
+                    .draw();
+                })
+                .on('keyup', function (e) {
+                  e.stopPropagation();
+
+                  $(this).trigger('change');
+                  $(this)
+                    .focus()[0]
+                  // .setSelectionRange(cursorPosition, cursorPosition);
+                });
+            });
+        },
+      });
+
+
+
+      /**********************/
+
+      /**********************/
+      $('#RevisedDocuments thead tr')
+        .clone(true)
+        .addClass('reviseddoc')
+        .appendTo('#RevisedDocuments thead');
+
+      var table = $('#RevisedDocuments').DataTable({
+        // "columnDefs": [
+        //   {
+        //     "targets": [1],
+        //     "orderable": false,
+        //   }
+
+        // ],
+        orderCellsTop: true,
+        fixedHeader: true,
+        //scrollY: "300px",
+        initComplete: function () {
+          var api = this.api();
+
+          // For each column
+          api
+            .columns()
+            .eq(0)
+
+            .each(function (colIdx) {
+              // Set the header cell to contain the input element
+              var cell = $('.reviseddoc th').eq(
+                $(api.column(colIdx).header()).index()
+              );
+              var title = $(cell).text();
+              $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+              // On every keypress in this input
+              $(
+                'input',
+                $('.reviseddoc th').eq($(api.column(colIdx).header()).index())
+              )
+                .off('keyup change')
+                .on('change', function (e) {
+                  // Get the search value
+                  $(this).attr('title', $(this).val());
+                  var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                  var cursorPosition = this.selectionStart;
+                  // Search the column for that value
+                  api
+                    .column(colIdx)
+                    .search(
+                      this.value != ''
+                        ? regexr.replace('{search}', '(((' + this.value + ')))')
+                        : '',
+                      this.value != '',
+                      this.value == ''
+                    )
+                    .draw();
+                })
+                .on('keyup', function (e) {
+                  e.stopPropagation();
+
+                  $(this).trigger('change');
+                  $(this)
+                    .focus()[0]
+                  // .setSelectionRange(cursorPosition, cursorPosition);
+                });
+            });
+        },
+      });
+
+
+
+      /**********************/
     });
   </script>
 
