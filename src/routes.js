@@ -8,6 +8,7 @@ import ClauseDoc from "./componets/ClauseDoc";
 import AgeingReport from "./componets/AgeingReport";
 import ArchivedDocuments from "./componets/ArchivedDocuments";
 import ConsolidatedReport from "./componets/ConsolidatedReport";
+import MasterDocuments from "./componets/MasterDocuments";
 const AppRoutes = props => {
     return (
         <Routes>
@@ -20,6 +21,7 @@ const AppRoutes = props => {
             <Route exact path="/AgeingReport" element={<AgeingReport />}></Route>
             <Route exact path="/ArchivedDocuments" element={<ArchivedDocuments />}></Route>
             <Route exact path="/ConsolidatedReport" element={<ConsolidatedReport />}></Route>
+            <Route exact path="/MasterDocuments" element={<MasterDocuments />}></Route>
         </Routes>
     );
 };
